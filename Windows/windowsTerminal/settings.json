@@ -1,0 +1,133 @@
+{
+	"$help": "https://aka.ms/terminal-documentation",
+	"$schema": "https://aka.ms/terminal-profiles-schema",
+	"actions": [
+		{
+			"command": {
+				"action": "copy",
+				"singleLine": false
+			},
+			"keys": "ctrl+c"
+		},
+		{
+			"command": "paste",
+			"keys": "ctrl+v"
+		},
+		{
+			"command": "find",
+			"keys": "ctrl+shift+f"
+		},
+		{
+			"command": {
+				"action": "splitPane",
+				"split": "auto",
+				"splitMode": "duplicate"
+			},
+			"keys": "alt+shift+d"
+		}
+	],
+	"alwaysOnTop": true,
+	"alwaysShowNotificationIcon": false,
+	"autoHideWindow": false,
+	"copyFormatting": "none",
+	"copyOnSelect": false,
+	"defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+	"experimental.rendering.forceFullRepaint": true,
+	"experimental.rendering.software": true,
+	"focusFollowMouse": true,
+	"launchMode": "maximizedFocus",
+	"minimizeToNotificationArea": false,
+	"profiles": {
+		"defaults": {
+			"colorScheme": "xcad",
+			"font": {
+				"face": "CaskaydiaCove NF",
+				"size": 16
+			},
+			"historySize": 12000,
+			"opacity": 95,
+			"scrollbarState": "hidden",
+			"startingDirectory": "%USERPROFILE%",
+			"padding": "20, 0, 0, 0",
+			"useAcrylic": false
+		},
+		"list": [
+			{
+				"commandline": "C:\\Program Files\\PowerShell\\7-preview\\pwsh.exe --NoLogo",
+				"elevate": false,
+				"guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+				"hidden": false,
+				"icon": "D:\\BackUp\\dotfiles\\windows\\icons\\fsociety.png",
+				"name": "PS",
+				"source": "Windows.Terminal.PowershellCore"
+			},
+			{
+				"commandline": "wsl ~",
+				"guid": "{f9ceaf27-504c-58d7-927c-d1d6a7ac7d3c}",
+				"hidden": false,
+				"icon": "D:\\BackUp\\dotfiles\\windows\\icons\\ubuntuV2.png",
+				"name": "Ubuntu",
+				"source": "CanonicalGroupLimited.Ubuntu22.04LTS_79rhkp1fndgsc"
+			},
+			{
+				"commandline": "wsl ~ -d kali-linux",
+				"guid": "{46ca431a-3a87-5fb3-83cd-11ececc031d2}",
+				"hidden": false,
+				"icon": "D:\\BackUp\\dotfiles\\windows\\icons\\kali.png",
+				"name": "Kali",
+				"source": "Windows.Terminal.Wsl"
+			}
+		]
+	},
+	"schemes": [
+		{
+			"background": "#1A1A1A",
+			"black": "#121212",
+			"blue": "#2B4FFF",
+			"brightBlack": "#666666",
+			"brightBlue": "#5C78FF",
+			"brightCyan": "#5AC8FF",
+			"brightGreen": "#905AFF",
+			"brightPurple": "#5EA2FF",
+			"brightRed": "#BA5AFF",
+			"brightWhite": "#FFFFFF",
+			"brightYellow": "#685AFF",
+			"cursorColor": "#FFFFFF",
+			"cyan": "#28B9FF",
+			"foreground": "#F1F1F1",
+			"green": "#7129FF",
+			"name": "xcad",
+			"purple": "#2883FF",
+			"red": "#A52AFF",
+			"selectionBackground": "#FFFFFF",
+			"white": "#F1F1F1",
+			"yellow": "#3D2AFF"
+		},
+		{
+			"background": "#1A1A1A",
+			"black": "#121212",
+			"blue": "#2B4FFF",
+			"brightBlack": "#4A4A4A",
+			"brightBlue": "#5C78FF",
+			"brightCyan": "#5AC8FF",
+			"brightGreen": "#905AFF",
+			"brightPurple": "#5EA2FF",
+			"brightRed": "#BA5AFF",
+			"brightWhite": "#FFFFFF",
+			"brightYellow": "#685AFF",
+			"cursorColor": "#FFFFFF",
+			"cyan": "#28B9FF",
+			"foreground": "#F1F1F1",
+			"green": "#7129FF",
+			"name": "xcad_tdl",
+			"purple": "#2883FF",
+			"red": "#A52AFF",
+			"selectionBackground": "#FFFFFF",
+			"white": "#F1F1F1",
+			"yellow": "#3D2AFF"
+		}
+	],
+	"showTabsInTitlebar": true,
+	"tabSwitcherMode": "inOrder",
+	"useAcrylicInTabRow": true
+}

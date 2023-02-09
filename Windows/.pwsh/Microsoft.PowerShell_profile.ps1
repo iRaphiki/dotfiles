@@ -22,7 +22,7 @@ function gitLogPretty {
 }
 # Alias 
 Set-Alias winfetch pwshfetch-test-1  
-Set-Alias v nvim
+Set-Alias vi nvim
 Set-Alias ll ls
 Set-Alias g goto
 Set-Alias la lsHidden 
@@ -34,6 +34,7 @@ Set-Alias gac gitAddCommit
 Set-Alias gco gitCheckout
 Set-Alias gls gitLogShort 
 Set-Alias glp gitLogPretty
+Set-Alias v 'C:\Users\rafae\.local\bin\lvim.ps1'
 
 # Icons
 Import-Module -Name Terminal-Icons
@@ -57,7 +58,7 @@ function goto {
 		  Set-Location -Path "E:\Code\projects\iraphiki"
 	  }
     "ws" {
-      Set-Location -Path "E:\Code\projects\iraphiki\CSA_Node\ws"
+      Set-Location -Path "E:\Code\projects\iraphiki\ws"
     }
     "cs" {
       Set-Location -Path "E:\MyDrive\Brain"
@@ -70,5 +71,6 @@ function goto {
 
 # StarShip config and var
 $ENV:STARSHIP_CONFIG = "$HOME\.config\starship.toml"
-$ENV:STARSHIP_DISTRO = "者 raphiki"
+$ENV:STARSHIP_DISTRO = " 者 iraphiki"
 Invoke-Expression (&starship init powershell)
+

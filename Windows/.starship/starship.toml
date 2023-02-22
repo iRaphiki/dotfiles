@@ -38,10 +38,16 @@ symbol = "ﴣ "
 disabled = true # Disable in pwsh
 allow_windows = true
 
+
+[hostname]
+ssh_only = false
+format = "on [$hostname](yellow bold) "
+disabled = true 
+
 [directory]
 truncation_length = 2
 truncation_symbol = "…/"
-home_symbol = " "
+home_symbol = ""
 read_only_style = "197"
 read_only = "  "
 format = "at [$path]($style)[$read_only]($read_only_style) "
@@ -56,7 +62,7 @@ style = "bold green"
 [git_status]
 format = '[\($all_status$ahead_behind\)]($style) '
 style = "bold green"
-conflicted = " 🏳"
+conflicted = "🏳"
 up_to_date = ""
 untracked = " "
 ahead = "⇡${count} "

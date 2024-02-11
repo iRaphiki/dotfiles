@@ -1,0 +1,31 @@
+- clean: ['~']
+
+- defaults:
+    link:
+      create: true
+      force: true
+
+- create:
+    - ~/.hushlogin
+
+- link:
+    ~/.dotly: os/mac/.dotly
+    ~/bin/bash: /opt/homebrew/bin/bash
+    ~/bin/date: /opt/homebrew/bin/gdate
+    ~/bin/find: /opt/homebrew/bin/gfind
+    ~/bin/make: /opt/homebrew/bin/gmake
+    ~/bin/sed: /opt/homebrew/bin/gsed
+    ~/bin/touch: /opt/homebrew/bin/gtouch
+    ~/bin/zsh: /opt/homebrew/bin/zsh
+    ~/.config/gh: os/mac/gh
+    ~/.config/nvim: editors/nvim
+    ~/.config/iterm2: os/mac/iterm2
+    ~/.config/raycast: os/mac/raycast
+    ~/.config/neofetch: os/mac/neofetch
+    ~/.warp: os/mac/warp
+    ~/.zshrc: shell/zsh/.zshrc
+    ~/.gitconfig: git/.gitconfig
+    ~/.gitignore_global: git/.gitignore_global
+    ~/Library/Application Support/Code/User/snippets: editors/code/snippets
+    ~/Library/Application Support/Code/User/settings.json: editors/code/settings.json
+    ~/Library/Application Support/Code/User/keybindings.json: editors/code/keybindings.json

@@ -1,0 +1,79 @@
+{
+  "PHPUnit Test": {
+    "prefix": "pts",
+    "body": [
+      "/** @test */",
+      "public function ${1:title}(): void",
+      "{",
+      "    ${2://}",
+      "}"
+    ],
+    "description": "PHPUnit Test"
+  },
+
+  "Backend Enum": {
+    "prefix": "bken",
+    "body": [
+      "",
+      "namespace App\\Enums;",
+      "",
+      "use Filament\\Support\\Contracts\\HasLabel;",
+      "",
+      "enum Suit${1:Example}: ${2:string} implements HasLabel",
+      "{",
+      "    case ${3:Example} = '${4:example}';",
+      "",
+      "    public function getLabel(): string",
+      "    {",
+      "        return match (\\$this) {",
+      "            self::${3:Example} => '${3:Example}',",
+      "        };",
+      "    }",
+      "",
+      "}",
+      ""
+    ],
+    "description": "Backend Enum with label"
+  }
+
+  "Backend Enum Full": {
+    "prefix": "bkenf",
+    "body": [
+      "",
+      "namespace App\\Enums;",
+      "",
+      "use Filament\\Support\\Colors\\Color;",
+      "use Filament\\Support\\Contracts\\HasIcon;",
+      "use Filament\\Support\\Contracts\\HasColor;",
+      "use Filament\\Support\\Contracts\\HasLabel;",
+      "",
+      "enum Suit${1:Example}: ${2:string} implements HasLabel, HasIcon, HasColor",
+      "{",
+      "    case ${3:Example} = '${4:example}';",
+      "",
+      "    public function getLabel(): string",
+      "    {",
+      "        return match (\\$this) {",
+      "            self::${3:Example} => '${3:Example}',",
+      "        };",
+      "    }",
+      "",
+      "    public function getIcon(): ?string",
+      "    {",
+      "        return match (\\$this) {",
+      "            self::${3:Example} => 'heroicon-m-',",
+      "        };",
+      "    }",
+      "",
+      "    public function getColor(): string|array|null",
+      "    {",
+      "        return match (\\$this) {",
+      "            self::${3:Example} => Color::Emerald",
+      "        };",
+      "    }",
+      "}",
+      ""
+    ],
+    "description": "Backend Enum with label, color and icon"
+  }
+}

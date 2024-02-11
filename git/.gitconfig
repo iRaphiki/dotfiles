@@ -1,0 +1,26 @@
+[user]
+	name = rafafdez-fillthegapp
+	email = rafael.fernandez@fillthegapp.com
+[init]
+    defaultBranch = main
+[color]
+    ui = true
+[core]
+    excludesfile = ~/.gitignore_global
+    editor = code --wait
+[alias]
+    st = status
+    co = checkout
+    ci = commit
+    br = branch
+    ps = push
+    pl = pull
+    logg = log --graph --decorate --oneline --abbrev-commit --all
+[status]
+    short = true
+[credential "https://github.com"]
+	helper = 
+	helper = !/opt/homebrew/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/opt/homebrew/bin/gh auth git-credential

@@ -1,0 +1,58 @@
+{
+	"console.log() of String": {
+		"prefix": "lg",
+		"body": ["console.log('$1');", "$2"],
+		"description": "Log output a String to console"
+	},
+	"if elseIf else": {
+		"prefix": "iei",
+		"body": [
+			"if (${1:condition}) {",
+			"  $2",
+			"} else if (${3:condition}) {",
+			"  $4",
+			"} else {",
+			"  $5",
+			"}",
+			"$6"
+		],
+		"description": "ifElseIf"
+	},
+	"elseIf standalone": {
+		"prefix": "ef",
+		"body": ["else if ('${1:condition'}) {", "  '2$'", "} "],
+		"description": "elseIf standalone"
+	},
+	"else standalone": {
+		"prefix": "e",
+		"body": ["else {", "  '1$'", "} ", "$2"],
+		"description": "else standalone"
+	},
+	"addEventListener": {
+		"prefix": "ael",
+		"body": [
+			"${1:element}.addEventListener('${2:click}', (e) => {${3:e.target}});"
+		],
+		"description": "addEventListener"
+	},
+	"react functional components": {
+		"prefix": "rfc",
+		"body": [
+			"import './${1:App}.css';",
+			"",
+			"function App() {",
+			"  return (",
+			"    ${2:<></>}",
+			"  );",
+			"}",
+			"",
+			"export default App;"
+		],
+		"description": "react functional components"
+	},
+	"useState Hook React": {
+		"prefix": "rsh",
+		"body": ["const [${1:value}, ${2:setValue}] = useState(${3:false});"],
+		"description": "useState Hook React"
+	}
+}

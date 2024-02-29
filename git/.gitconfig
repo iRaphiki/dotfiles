@@ -24,3 +24,9 @@
 [credential "https://gist.github.com"]
 	helper = 
 	helper = !/opt/homebrew/bin/gh auth git-credential
+[maintenance]
+	repo = /Users/rafael/Developer/sites/synergym-dev
+[column]
+	ui = auto
+[branch]
+	sort = -committerdate

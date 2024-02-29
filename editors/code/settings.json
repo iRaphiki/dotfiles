@@ -1,25 +1,31 @@
 {
-  // Native Functions
-  "security.workspace.trust.untrustedFiles": "open",
-  "workbench.startupEditor": "none",
-  "editor.codeActionsOnSave": {
-    "source.addMissingImports": "explicit",
-    "source.organizeImports": "explicit"
+  "[blade]": {
+    "editor.defaultFormatter": "shufo.vscode-blade-formatter"
   },
-  "emmet.excludeLanguages": ["markdown", "php"],
-  "emmet.triggerExpansionOnTab": true, // enable tab to expanse emmet tags
-  // Extension Functions
-  "extensions.autoUpdate": "onlyEnabledExtensions",
-  "extensions.ignoreRecommendations": true,
-  "markdown-preview-enhanced.enableHTML5Embed": true,
-  "markdown-preview-enhanced.HTML5EmbedUseLinkSyntax": true,
-  "markdown-preview-enhanced.HTML5EmbedIsAllowedHttp": true,
-  "projectManager.git.baseFolders": [
-    "$HOME/Developer/workspace",
-    "$HOME/Developer/sites"
-  ],
-  "projectManager.sortList": "Recent",
-  "workbench.settings.editor": "json",
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[php]": {
+    // "editor.defaultFormatter": "open-southeners.laravel-pint"
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "blade.format.enable": true,
+  "breadcrumbs.enabled": false,
   "cSpell.ignorePaths": [
     "package-lock.json",
     "node_modules",
@@ -28,144 +34,209 @@
     ".vscode",
     ".vscode-insiders"
   ],
-  "vim.leader": "<space>",
-  "vim.foldfix": true,
-  "vim.hlsearch": true,
-  "vim.useSystemClipboard": true,
-  "vim.highlightedyank.enable": true,
-  "vim.highlightedyank.color": "rgba(100, 100, 100, 0.3)",
-  "vim.highlightedyank.textColor": "white",
-  "vim.normalModeKeyBindings": [
-    {
-      "before": ["leader", "w"],
-      "commands": [":w!"]
-    },
-    {
-      "before": ["leader", "q"],
-      "commands": [":q!"]
-    },
-    {
-      "before": ["leader", "x"],
-      "commands": [":x!"]
-    },
-    {
-      "before": ["<c-a>"],
-      "after": ["g", "g", "V", "G"]
-    },
-    {
-      "before": ["leader", "k"],
-      "commands": ["editor.action.showHover"]
-    },
-    {
-      "before": ["]", "d"],
-      "commands": ["editor.action.marker.next"]
-    },
-    {
-      "before": ["[", "d"],
-      "commands": ["editor.action.marker.prev"]
-    },
-    {
-      "before": ["leader", "c", "a"],
-      "commands": ["editor.action.quickFix"]
-    }
+  "cSpell.language": "en,es-ES",
+  "css.customData": [
+    ".vscode/css_custom_data.json"
   ],
-  // "css.lint.unknownAtRules": "ignore",
-  // Theme and personalization
-  "workbench.sideBar.location": "right",
-  "editor.fontSize": 16,
-  "editor.smoothScrolling": true,
+  "database-client.telemetry.usesOnlineServices": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.bracketPairColorization.enabled": false,
+  "editor.cursorBlinking": "expand",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorStyle": "line-thin",
+  "editor.fontFamily": "'JetBrainsMono Nerd Font', 'CaskaydiaCove Nerd Font', 'Fira Code'",
+  "editor.fontLigatures": true,
+  "editor.formatOnSave": true,
+  "editor.inlayHints.padding": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.lineHeight": 3.15,
   "editor.lineNumbers": "relative",
-  "search.showLineNumbers": true,
-  "zenMode.hideLineNumbers": false,
-  "zenMode.centerLayout": true,
-  "editor.linkedEditing": true,
-  "editor.suggest.insertMode": "replace",
-  "zenMode.hideStatusBar": false,
-  "editor.stickyScroll.enabled": true,
-  "editor.glyphMargin": false,
-  "editor.quickSuggestions": {
-    "other": "on",
-    "comments": "on",
-    "strings": "on"
-  },
+  // "editor.lineHeight": 2.15,
+  // "editor.lineHeight": 48,
+  "editor.matchBrackets": "never",
   "editor.minimap.enabled": false,
+  "editor.renderLineHighlight": "none",
+  "editor.renderWhitespace": "trailing",
+  "editor.smoothScrolling": true,
+  "emmet.excludeLanguages": [
+    "markdown",
+    "php"
+  ],
+  "emojisense.languages": {
+    "markdown": true,
+    "php": true,
+    "plaintext": {
+      "emojiDecoratorsEnabled": false,
+      "markupCompletionsEnabled": false
+    },
+    "scminput": true // language used in the source control commit message box
+  },
+  "errorLens.messageTemplate": "$severity $source - $message  ",
+  "explorer.compactFolders": false,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "files.associations": {
+    "*.module": "php"
+  },
+  "files.autoSave": "onWindowChange",
+  "files.trimTrailingWhitespace": true,
+  "git-graph.graph.style": "angular",
+  "git.confirmSync": false,
+  "gitblame.inlineMessageFormat": "${author.name} - ${time.ago}",
+  "gitblame.statusBarMessageFormat": "${author.name} - ${time.ago}",
   "indentRainbow.colors": [
     "rgba(252,252,252,0.07)",
     "rgba(189,189,189,0.07)",
     "rgba(126,126,126,0.07)",
     "rgba(63,63,63,0.07)"
   ],
-  "editor.fontLigatures": true,
-  "editor.fontFamily": "'CaskaydiaCove Nerd Font', 'Fira Code', Menlo, Monaco, 'Courier New', monospace",
-  // Formatters
-  "editor.guides.bracketPairs": true,
-  "editor.guides.bracketPairsHorizontal": true,
-  "blade.format.enable": true,
-  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "[php]": {
-    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
-    "editor.autoClosingBrackets": "always"
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[yaml]": {
-    "editor.defaultFormatter": "redhat.vscode-yaml",
-    "editor.insertSpaces": true,
-    "editor.tabSize": 2,
-    "editor.autoIndent": "keep",
-    "diffEditor.ignoreTrimWhitespace": false,
-    "editor.quickSuggestions": {
-      "other": true,
-      "comments": false,
-      "strings": true
-    }
-  },
-  "html.format.templating": true,
-  // Telemetry
-  "telemetry.telemetryLevel": "off",
-  "intelephense.telemetry.enabled": false,
-  "workbench.colorTheme": "Bearded Theme Vivid Black",
-  "editor.lineHeight": 2.3,
-  "editor.accessibilitySupport": "off",
-  "intelephense.rename.namespaceMode": "all",
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "markdown.updateLinksOnFileMove.enabled": "always",
-  "workbench.iconTheme": "material-icon-theme",
-  "editor.matchBrackets": "never",
-  "terminal.integrated.env.osx": {},
-  "terminal.integrated.defaultProfile.osx": "zsh",
-  "terminal.integrated.cwd": ".",
-  "terminal.external.osxExec": "iterm2",
-  "terminal.integrated.fontSize": 14,
-  "terminal.integrated.smoothScrolling": true,
-  "explorer.confirmDelete": false,
-  "files.trimTrailingWhitespace": true,
-  "editor.padding.bottom": 6,
-  "editor.padding.top": 8,
-  "editor.inlayHints.padding": true,
   "intelephense.completion.fullyQualifyGlobalConstantsAndFunctions": true,
-  "window.commandCenter": false,
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
+  "intelephense.telemetry.enabled": false,
+  "intelephense.trace.server": "messages",
+  "laravel-pint.enable": true,
+  "laravel-pint.enableDebugLogs": true,
+  "laravel-pint.preset": "laravel",
+  "markdown-preview-enhanced.enableHTML5Embed": true,
+  "markdown-preview-enhanced.HTML5EmbedIsAllowedHttp": true,
+  "markdown-preview-enhanced.HTML5EmbedUseLinkSyntax": true,
+  "material-icon-theme.activeIconPack": "angular",
+  "material-icon-theme.folders.color": "#808080",
+  "material-icon-theme.folders.theme": "specific",
+  "material-icon-theme.hidesExplorerArrows": true,
+  "namespaceResolver.sortOnSave": true,
   "npm.packageManager": "pnpm",
-  "editor.formatOnSave": true,
-  "workbench.editor.showTabs": "none",
+  "phpParameterHint.changeDelay": 0,
+  "phpParameterHint.fontSize": 14,
+  "phpParameterHint.hintTypeName": 2,
+  "phpParameterHint.onChange": true,
+  "phpParameterHint.onSave": false,
+  "phpParameterHint.opacity": 1,
+  "phpParameterHint.saveDelay": 0,
+  "phpParameterHint.showDollarSign": false,
+  "phpParameterHint.textEditorChangeDelay": 0,
+  "phpParameterHint.verticalPadding": 0,
+  "projectManager.git.baseFolders": [
+    "$HOME/Developer/workspace",
+    "$HOME/Developer/sites"
+  ],
+  "projectManager.sortList": "Recent",
+  "scm.diffDecorations": "gutter",
+  "screencastMode.fontSize": 30,
+  "screencastMode.keyboardOverlayTimeout": 5000,
+  "screencastMode.verticalOffset": 2,
+  "security.workspace.trust.untrustedFiles": "newWindow",
+  "telemetry.telemetryLevel": "off",
+  "terminal.explorerKind": "external",
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+  "terminal.integrated.gpuAcceleration": "on",
+  "typescript.inlayHints.enumMemberValues.enabled": true,
+  "update.mode": "default",
+  "vim.foldfix": true,
+  "vim.highlightedyank.color": "rgba(100, 100, 100, 0.3)",
+  "vim.highlightedyank.enable": true,
+  "vim.highlightedyank.textColor": "white",
+  "vim.hlsearch": true,
+  "vim.leader": "<space>",
+  "vim.normalModeKeyBindings": [
+    {
+      "before": [
+        "leader",
+        "w"
+      ],
+      "commands": [
+        ":w!"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "q"
+      ],
+      "commands": [
+        ":q!"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "x"
+      ],
+      "commands": [
+        ":x!"
+      ]
+    },
+    {
+      "after": [
+        "g",
+        "g",
+        "V",
+        "G"
+      ],
+      "before": [
+        "<c-a>"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "k"
+      ],
+      "commands": [
+        "editor.action.showHover"
+      ]
+    },
+    {
+      "before": [
+        "]",
+        "d"
+      ],
+      "commands": [
+        "editor.action.marker.next"
+      ]
+    },
+    {
+      "before": [
+        "[",
+        "d"
+      ],
+      "commands": [
+        "editor.action.marker.prev"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "c",
+        "a"
+      ],
+      "commands": [
+        "editor.action.quickFix"
+      ]
+    }
+  ],
+  "vim.useSystemClipboard": true,
+  "window.autoDetectColorScheme": true,
+  "window.commandCenter": false,
+  "window.menuBarVisibility": "compact",
+  "window.title": "${rootName}",
   "workbench.activityBar.location": "top",
-  "window.zoomLevel": -1,
-  "window.openFoldersInNewWindow": "on",
-  "window.openFilesInNewWindow": "on",
-  "cSpell.language": "en,es-ES",
-  "[properties]": {
-    "editor.defaultFormatter": "foxundermoon.shell-format"
-  }
+  "workbench.colorTheme": "Tokyo Night",
+  "workbench.editor.tabActionCloseVisibility": false,
+  "workbench.editor.tabCloseButton": "off",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.layoutControl.enabled": false,
+  "workbench.list.smoothScrolling": true,
+  "workbench.preferredDarkColorTheme": "Tokyo Night",
+  "workbench.preferredLightColorTheme": "GitHub Light Default",
+  "workbench.sideBar.location": "right",
+  "workbench.startupEditor": "none",
+  "workbench.statusBar.visible": true,
+  "workbench.tree.indent": 16,
+  "zenMode.centerLayout": false,
+  "zenMode.fullScreen": false,
+  "zenMode.hideLineNumbers": false
 }

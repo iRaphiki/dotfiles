@@ -34,14 +34,6 @@ export PATH="~/.composer/vendor/bin:$PATH"
 # Homebrew
 export PATH="/opt/homebrew/sbin:$PATH"
 
-# NVM lts lib
-export PATH="~/.nvm/versions/node/v18.18.0/lib:$PATH"
-
-# NVM dir
-export NVM_DIR="$HOME/.nvm"
-[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"                                       # This loads nvm
-[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
-
 # Herd injected PHP binary.
 export PATH="/Users/rafael/Library/Application Support/Herd/bin/":$PATH
 
@@ -61,3 +53,10 @@ export HERD_PHP_83_INI_SCAN_DIR="/Users/rafael/Library/Application Support/Herd/
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
+
+
+# Herd injected NVM configuration
+export NVM_DIR="/Users/rafael/Library/Application Support/Herd/config/nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
+[[ -f "/Applications/Herd.app/Contents/Resources/config/shell/zshrc.zsh" ]] && builtin source "/Applications/Herd.app/Contents/Resources/config/shell/zshrc.zsh"
